@@ -31,12 +31,12 @@
 
 > Description the project.
 
-1 My project has Postgres database set up.
-2 I built your project schema.
-3 I have created and run the necessary migration files.
-4 table and column names match match the ERD diagram.
-5 Foreign keys have included.
-6 All columns that are foreign keys have a corresponding index.
+1. My project has Postgres database set up.
+2. I built your project schema.
+3. I have created and run the necessary migration files.
+4. table and column names match match the ERD diagram.
+5. Foreign keys have included.
+6. All columns that are foreign keys have a corresponding index.
 
 ## 🛠 Built With <a name="built-with"></a>
 
