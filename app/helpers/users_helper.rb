@@ -1,3 +1,3 @@
 # rubocop:disable all
-module ApplicationHelper
+module UsersHelper
 end
