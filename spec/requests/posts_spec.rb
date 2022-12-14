@@ -16,7 +16,7 @@ RSpec.describe 'users', type: :request do
     end
   end
 
-    describe 'GET/show' do
+  describe 'GET/show' do
     before :each do
       get '/users/:user_id/posts/'
     end
@@ -27,5 +27,4 @@ RSpec.describe 'users', type: :request do
       expect(response.body).to include('Posts')
     end
   end
-
 end
