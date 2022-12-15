@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe 'users', type: :request do
-  describe 'GET/index' do
+RSpec.describe 'posts', type: :request do
+  describe 'GET /index' do
     before :each do
-      get '/users/:user_id/posts/'
+      get '/users/:user_id/posts'
     end
     it 'is a success' do
       expect(response).to have_http_status(:success)
@@ -18,10 +18,13 @@ RSpec.describe 'users', type: :request do
 
   describe 'GET/show' do
     before :each do
-      get '/users/:user_id/posts/'
+      get '/users/:user_id/posts/1'
     end
     it 'is a success' do
-      expect(response).to have_http_status(:success)
+      expect(response).to have_http_status(200)
+    end
+    it 'Renders the right template' do
+      expect(response).to render_template(:show)
     end
     it 'Should return the correct placeholder' do
       expect(response.body).to include('Posts')
