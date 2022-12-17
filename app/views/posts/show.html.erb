@@ -15,5 +15,16 @@
             <p><%= comment.author.name %> <%= comment.text %></p>
         <% end %>
       </div>
-    </div>
+  </div>
+  <div class='post-feature'>
+    <%= form_with model: @like, url: like_path, method: :post do |f| %>
+        <%= f.submit "Like post", class: "like-post" %>
+    <% end %>
+    <%= form_with model: @comment, url: post_path, method: :post, scope: :comment do |f| %>
+      <div class="comment-section">
+        <%= f.text_area :text, placeholder: "Add Comment", class: "comment" %>
+        <%= f.submit "Comment", class: "submit-comment" %>
+      </div>
+    <% end %>
+  </div>
 </div>
