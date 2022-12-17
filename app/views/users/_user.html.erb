@@ -1,13 +1,9 @@
-<div id="<%= dom_id user %>">
-
-<div class = "container my-5 userBG">
-    <div class = "row">
-      <div class="col-12 row">
-        <img src= "<%= user.photo %>" class="col-6 py-2 userImage">
-        <div class = "col-6 row py-5">
-          <h3 class = "col-12"><%= user.name %></h3>
-          <h4 class = "col-12">Number of posts:  <%= user.posts_counter %></h4>
-        </div>
+<div class='user-item'>
+    <img src="<%= user.photo %>" alt='avatar-<%= user.name%>' class='user-avatar'><br>
+    <div class='user-description'>
+        <h2 class='user-name'>
+            <%= link_to user.name , user %>
+        </h2>
+        <span class='post-number'>Post counter: <%= user.posts_counter == nil ? 0 : user.posts_counter %></span>
     </div>
-  </div>
 </div>

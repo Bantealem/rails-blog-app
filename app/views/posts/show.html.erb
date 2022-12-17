@@ -1,17 +1,19 @@
-<p style="color: green"><%= notice %></p>
-
-<%= render @post %>
-
-<div class = "container my-5 py-5 userBG">
-    <div class = "row">
-      <div class="col-12 row">
-          <h5 class="text-light">Comments</h5>
-          <% @post.comments.each do |comment| %>
-              <div>
-                <span><%= @post.author.name %>:</span>
-              <span><%= comment.text %></span>
-            </div>
-          <% end %>
-    </div>  
+<div class="my-comment">
+  <div class="comment-bio">
+      <div class='comment-header'>
+        <p class='title'><%= @post.title %> by <%= @user.name %></p>
+        <div class='comment-details'>
+            <p>Comments: <%= @post.comments.size %></p>
+            <p>Likes: <%= @post.likes.size %></p>
+        </div>
+      </div>
+      <p class="comment-text"><%= @post.text%></p>
   </div>
+  <div class="comments">
+      <div class="comment-item">
+        <% @post.comments.each do |comment|%>
+            <p><%= comment.author.name %> <%= comment.text %></p>
+        <% end %>
+      </div>
+    </div>
 </div>
