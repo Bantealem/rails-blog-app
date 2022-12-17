@@ -1,3 +1,20 @@
-
-<h1>Posts</h1>
-
+<section class='user-posts'>
+    <nav>
+        <%= render 'users/user', user: @user %>
+    </nav>
+    <% @user.recent_posts.each_with_index do |post, id| %>
+        <div class='post-user'>
+            <%= render 'posts/post', post: post %>
+            <div class='user-comments'>
+                <% post.recent_comments.each do |comment| %>
+                    <p>
+                        <strong>
+                            <%= comment.author.name %>
+                        </strong>
+                        :<%= comment.text %>
+                    </p>
+                <% end %>
+            </div>
+        </div>
+    <% end %>
+</section>

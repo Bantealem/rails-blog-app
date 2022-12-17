@@ -1,0 +1,9 @@
+<div class='user-item'>
+    <img src="<%= user.photo %>" alt='avatar-<%= user.name%>' class='user-avatar'><br>
+    <div class='user-description'>
+        <h2 class='user-name'>
+            <%= link_to user.name , user %>
+        </h2>
+        <span class='post-number'>Post counter: <%= user.posts_counter == nil ? 0 : user.posts_counter %></span>
+    </div>
+</div>

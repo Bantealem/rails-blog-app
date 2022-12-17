@@ -1,12 +1,5 @@
-<%# <p style="color: green"><%= notice</p> %>
-
-<h1>Users</h1>
-
-<%# <div id="users">
+<section class='users-list'>
   <% @users.each do |user| %>
-    <%# <%= render user %> 
-    <%# <p> %>
-      <%# <%= link_to "Show this user", user %> 
-    <%# </p> %>
-  <%# <% end %> 
-<%# </div> %> 
+    <%= render "users/user", user: user %>
+  <% end %>
+</section>

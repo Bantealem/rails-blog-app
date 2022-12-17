@@ -1,0 +1,10 @@
+<div class='post-item'>
+    <h3>Post #<%= post.id %>
+        <%= link_to post.title,user_post_path(@user, post) %>
+    </h3>
+    <p><%= post.text%></p>
+    <div class='post-details'>
+        <p>Comments: <%= post.comments.size %></p>
+        <p>Likes: <%= post.likes.size%></p>
+    </div>
+</div>

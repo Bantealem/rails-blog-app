@@ -1,11 +1,15 @@
-<%# <p style="color: green"><%= notice</p>
-
-<%# <%= render @user %> 
-
-<%# <div>
-  <%# <%= link_to "Edit this user", edit_user_path(@user) %> 
-  <%# <%= link_to "Back to users", users_path %>
-
-  <%# <%= button_to "Destroy this user", @user, method: :delete %> 
-<%# </div> %> 
-<h1>User<h1>
+<section class='user-details'>
+    <nav>
+        <%= render "users/user", user: @user %>
+    </nav>
+    <div class='bio'>
+        <h3>Bio</h3>
+        <p><%= @user.bio%></p>
+    </div>
+    <% @user.recent_posts.each do |post| %>
+        <%= render 'posts/post', post: post %>
+    <% end %>
+    <button type="button" class="see-all-posts">
+        <%= link_to "See All Posts", user_posts_path(@user) %>
+    </button>
+</section>

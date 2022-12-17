@@ -1,15 +1,121 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.users-list {
+  margin-top: 3rem;
+}
+
+.user-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.user-item img {
+  border: 2px solid #000;
+  padding: 1rem;
+  width: 8rem;
+  margin-right: 2rem;
+}
+
+.user-item .user-description {
+  border: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+  padding: 0.5rem;
+}
+
+.user-description a {
+  text-decoration: none;
+  color: #000;
+}
+
+.user-description span {
+  margin-top: 3rem;
+}
+
+.bio {
+  width: 30rem;
+  border: 2px solid #000;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.post-item {
+  border: 2px solid #000;
+  margin-top: 0.5rem;
+}
+
+.post-details {
+  display: flex;
+  margin-left: 70%;
+}
+
+.user-comments {
+  border: 2px solid #000;
+  margin-top: 0.1rem;
+}
+
+.post-user {
+  margin-top: 1.5rem;
+}
+
+.my-comment {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-comment .comment-bio {
+  margin-top: 3rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #000;
+}
+
+.comment-bio .comment-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.comment-header .title {
+  margin-right: 7rem;
+  font-weight: 700;
+  width: 20rem;
+}
+
+.comment-bio .comment-details {
+  display: flex;
+  width: 100%;
+  margin-right: 0;
+}
+
+.my-comment .comments {
+  width: 100%;
+  border: 2px solid #000;
+  margin-top: 1rem;
+}
+
+.see-all-posts {
+  border: 2px solid #000;
+  padding: 0.5rem 1rem;
+  margin-left: 38%;
+  margin-top: 1rem;
+}
