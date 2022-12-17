@@ -1,63 +1,63 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .userImage {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 .userBG,
 .ebdShow {
-    background-color: #e2e2e9;
-    color: #070f11;
+  background-color: #e2e2e9;
+  color: #070f11;
 }
 
 .bioText,
 .ebd a,
 .blueTitle,
 .ebdShow a {
-    color: rgb(8, 8, 241);
+  color: rgb(8, 8, 241);
 }
 
 .blueTitle strong {
-    color: #ffc400;
+  color: #ffc400;
 }
 
 .last {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .buttonColor {
-    color: #a6ff00;
+  color: #a6ff00;
 }
 
 .ebd a,
 .buttonColor,
 .ebdShow a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .button_to {
-    width: 33%;
+  width: 33%;
 }
 
 .ebdShowPost {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .ebdShowPost a {
-    color: #ff79c6;
+  color: #ff79c6;
 }
 
 .ebd a:hover,
 .buttonColor:hover {
-    color: #ff79c6;
-    text-decoration: underline;
+  color: #ff79c6;
+  text-decoration: underline;
 }
 
 .ebdShow a:hover {
-    text-decoration: underline;
-    color: #ff79c6;
+  text-decoration: underline;
+  color: #ff79c6;
 }
