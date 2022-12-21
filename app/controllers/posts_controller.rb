@@ -1,3 +1,4 @@
+# rubocop:disable all
 class PostsController < ApplicationController
   def index
     @user = User.find(params[:user_id])

@@ -1,3 +1,4 @@
+# rubocop:disable all
 class CommentsController < ApplicationController
   def new
     @comment = Comment.new
