@@ -1,3 +1,4 @@
+# rubocop:disable all
 class UsersController < ApplicationController
   def index
     @users = User.all.order(:id)

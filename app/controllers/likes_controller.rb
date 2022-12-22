@@ -1,3 +1,4 @@
+# rubocop:disable all
 class LikesController < ApplicationController
   def create
     @like = current_user.likes.new
