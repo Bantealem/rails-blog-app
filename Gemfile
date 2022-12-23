@@ -76,6 +76,7 @@ group :test do
 end
 group :development, :test do
   gem 'database_cleaner'
+  gem 'letter_opener'
 end
 
 group :development, :test do
@@ -83,3 +84,5 @@ group :development, :test do
 end
 
 gem 'bullet', group: 'development'
+
+gem 'devise'

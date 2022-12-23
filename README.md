@@ -89,11 +89,17 @@ To run the project, execute the following command:
 
 ## Authors
 
-👤 **Bantelom Geto**
+👤 **Author2**
 
 - GitHub: [Bantealem](https://github.com/Bantealem)
 - Twitter: [Bantealem](https://twitter.com/BantealemG)
 - LinkedIn: [Bantealem](https://www.linkedin.com/in/bantealem-geto-a301b9213/)
+
+👨‍💻 **Author1**
+
+- GitHub: [@skyv26](https://github.com/skyv26)
+- Twitter: [@vrma_aakash](https://twitter.com/vrma_aakash)
+- LinkedIn: [skyv2022](https://linkedin.com/in/skyv2022)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
